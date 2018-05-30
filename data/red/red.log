@@ -1,0 +1,7 @@
+[30/05/2018 06:28] ERROR red on_command_error 369: Exception in command 'audioset volume'
+Traceback (most recent call last):
+  File "lib\discord\ext\commands\core.py", line 50, in wrapped
+    ret = yield from coro(*args, **kwargs)
+  File "C:\Users\R\Documents\Files\Music Bot\Red-DiscordBot\cogs\audio.py", line 1283, in audioset_volume
+    vc.audio_player.volume = percent / 100
+AttributeError: 'VoiceClient' object has no attribute 'audio_player'
